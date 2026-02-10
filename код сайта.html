@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда автокрана 25 тонн | Грузоподъемность 25т | Выгодные цены</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-color: #ff6600;
+            --secondary-color: #333333;
+            --light-color: #f9f9f9;
+            --dark-color: #222222;
+            --gray-color: #eeeeee;
+            --text-color: #444444;
+        }
+
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark-color);
+        }
+
+        .logo i {
+            color: var(--primary-color);
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 600;
+            transition: color 0.3s;
+            font-size: 1.05rem;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .phone {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--dark-color);
+        }
+
+        .phone i {
+            color: var(--primary-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--dark-color);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 180px 0 100px;
+            margin-top: 70px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            border: 2px solid var(--primary-color);
+        }
+
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+
+        /* Features Section */
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text-color);
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .features {
+            background-color: var(--light-color);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            background-color: var(--primary-color);
+            color: white;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+
+        /* Crane Info Section */
+        .crane-info {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 80px;
+        }
+
+        .crane-info:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .crane-info-img {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .crane-info-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        .crane-info-img:hover img {
+            transform: scale(1.05);
+        }
+
+        .crane-info-text {
+            flex: 1;
+        }
+
+        .crane-info-text h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+
+        .crane-info-text ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .crane-info-text li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .crane-info-text li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        /* Price Section */
+        .pricing {
+            background-color: var(--gray-color);
+        }
+
+        .price-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .price-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .price-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .price-header {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 25px;
+        }
+
+        .price-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .price-period {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        .price-body {
+            padding: 30px;
+        }
+
+        .price-body ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .price-body li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--gray-color);
+        }
+
+        /* Contact Section */
+        .contact-form {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 15px;
+        }
+
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-column ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-column .contact-info li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #444;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .crane-info, .crane-info:nth-child(even) {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            nav.active {
+                display: block;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .phone {
+                font-size: 1.1rem;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .section-padding {
+                padding: 60px 0;
+            }
+            
+            .contact-form {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-crane"></i>
+                <div>Кран<span>25</span></div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#features">Преимущества</a></li>
+                    <li><a href="#crane">О кране</a></li>
+                    <li><a href="#pricing">Цены</a></li>
+                    <li><a href="#contact">Заказать</a></li>
+                </ul>
+            </nav>
+            
+            <div class="phone">
+                <i class="fas fa-phone"></i>
+                <span>8 (800) 123-45-67</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Аренда автокрана 25 тонн</h1>
+            <p>Профессиональные услуги автокрана грузоподъемностью 25 тонн для строительства, монтажа и погрузочных работ. Работаем круглосуточно по Москве и области.</p>
+            <a href="#contact" class="cta-button">Заказать кран</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section-padding" id="features">
+        <div class="container">
+            <h2 class="section-title">Наши преимущества</h2>
+            <p class="section-subtitle">Мы предлагаем лучшие условия аренды автокрана 25 тонн для ваших проектов</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Круглосуточная работа</h3>
+                    <p>Работаем 24/7, включая выходные и праздничные дни. Готовы выехать на объект в любое время.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-ruble-sign"></i>
+                    </div>
+                    <h3>Выгодные цены</h3>
+                    <p>Предлагаем конкурентные цены на аренду автокрана. Скидки при долгосрочном сотрудничестве.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-hard-hat"></i>
+                    </div>
+                    <h3>Опытные операторы</h3>
+                    <p>Наши операторы имеют более 10 лет опыта работы и все необходимые допуски и сертификаты.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crane Info Section -->
+    <section class="section-padding" id="crane">
+        <div class="container">
+            <h2 class="section-title">Автокран 25 тонн</h2>
+            <p class="section-subtitle">Технические характеристики и возможности нашего автокрана</p>
+            
+            <div class="crane-info">
+                <div class="crane-info-img">
+                    <img src="галич 2.jpg" alt="Автокран 25 тонн">
+                </div>
+                <div class="crane-info-text">
+                    <h3>Основные характеристики</h3>
+                    <p>Автокран грузоподъемностью 25 тонн — универсальная машина для выполнения широкого спектра строительно-монтажных и погрузочно-разгрузочных работ.</p>
+                    <ul>
+                        <li>Грузоподъемность: 25 тонн</li>
+                        <li>Длина стрелы: 30 метров</li>
+                        <li>Вылет стрелы: до 28 метров</li>
+                        <li>Высота подъема: до 32 метров</li>
+                        <li>Тип привода: гидравлический</li>
+                        <li>Шасси: КамАЗ, МАЗ или аналог</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="crane-info">
+                <div class="crane-info-text">
+                    <h3>Области применения</h3>
+                    <p>Наш автокран 25 тонн эффективно используется в различных отраслях строительства и промышленности.</p>
+                    <ul>
+                        <li>Монтаж строительных конструкций</li>
+                        <li>Погрузочно-разгрузочные работы</li>
+                        <li>Установка оборудования</li>
+                        <li>Кровельные работы</li>
+                        <li>Монтаж рекламных конструкций</li>
+                        <li>Строительство мостов и дорог</li>
+                    </ul>
+                </div>
+                <div class="crane-info-img">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Применение автокрана">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing section-padding" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Стоимость аренды</h2>
+            <p class="section-subtitle">Гибкая система ценообразования в зависимости от сроков и объема работ</p>
+            
+            <div class="price-cards">
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Посуточная аренда</h3>
+                        <div class="price">15 000 <span class="price-period">₽/сутки</span></div>
+                    </div>
+                    <div class="price-body">
+                        <ul>
+                            <li>Минимум 8 рабочих часов</li>
+                            <li>Опытный оператор</li>
+                            <li>ГСМ включен в стоимость</li>
+                            <li>Доставка крана до объекта</li>
+                        </ul>
+                        <a href="#contact" class="cta-button">Заказать</a>
+                    </div>
+                </div>
+                
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Понедельная аренда</h3>
+                        <div class="price">90 000 <span class="price-period">₽/неделя</span></div>
+                    </div>
+                    <div class="price-body">
+                        <ul>
+                            <li>Работа 5/2 или 6/1</li>
+                            <li>Опытный оператор</li>
+                            <li>ГСМ включен в стоимость</li>
+                            <li>Доставка крана до объекта</li>
+                            <li>Скидка 15% от почасовой ставки</li>
+                        </ul>
+                        <a href="#contact" class="cta-button">Заказать</a>
+                    </div>
+                </div>
+                
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Месячная аренда</h3>
+                        <div class="price">300 000 <span class="price-period">₽/месяц</span></div>
+                    </div>
+                    <div class="price-body">
+                        <ul>
+                            <li>Полный рабочий месяц</li>
+                            <li>Опытный оператор</li>
+                            <li>ГСМ включен в стоимость</li>
+                            <li>Доставка крана до объекта</li>
+                            <li>Скидка 25% от почасовой ставки</li>
+                            <li>Техническое обслуживание</li>
+                        </ul>
+                        <a href="#contact" class="cta-button">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding" id="contact">
+        <div class="container">
+            <h2 class="section-title">Заказать автокран</h2>
+            <p class="section-subtitle">Оставьте заявку и наш менеджер свяжется с вами в течение 15 минут для уточнения деталей</p>
+            
+            <div class="contact-form">
+                <form id="orderForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" class="form-control" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+7 (999) 123-45-67" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="example@mail.ru">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="period">Срок аренды</label>
+                        <select id="period" class="form-control">
+                            <option value="day">Посуточно (15 000 ₽/сутки)</option>
+                            <option value="week">Понедельно (90 000 ₽/неделя)</option>
+                            <option value="month">Помесячно (300 000 ₽/месяц)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Дополнительная информация</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Адрес объекта, тип работ, дата и время начала работ..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-button" style="width: 100%;">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Кран25</h3>
+                    <p>Аренда автокрана 25 тонн для строительных, монтажных и погрузочных работ в Москве и Московской области.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> 8 (800) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@kran25.ru</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Строителей, 15</li>
+                        <li><i class="fas fa-clock"></i> Работаем 24/7</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#features">Преимущества</a></li>
+                        <li><a href="#crane">О кране</a></li>
+                        <li><a href="#pricing">Цены</a></li>
+                        <li><a href="#contact">Заказать</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 "Кран25". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            mobileMenuBtn.innerHTML = mainNav.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Form submission
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const period = document.getElementById('period').value;
+            
+            // Simple validation
+            if(name && phone) {
+                // In a real application, here would be an AJAX request to the server
+                alert(`Спасибо, ${name}! Ваша заявка на аренду автокрана принята. Мы свяжемся с вами по номеру ${phone} в ближайшее время.`);
+                document.getElementById('orderForm').reset();
+            } else {
+                alert('Пожалуйста, заполните обязательные поля: имя и телефон.');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
