@@ -1,15 +1,102 @@
-
-</html>
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta name="yandex-verification" content="d2a6cf380c7fc8a5" /> 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>КранАренда Казань | Аренда автокранов 25 тонн</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <meta name="yandex-verification" content="d2a6cf380c7fc8a5">
+    <meta name="description" content="Аренда автокрана 25 тонн в Казани. Галичанин 25т, удлинённая стрела 28м. Круглосуточно, с опытным оператором. Цены от 2500 ₽/час. Работаем по Казани и Татарстану.">
+    <title>Аренда автокрана 25 тонн в Казани — цены, заказать круглосуточно | КранАренда116</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106801697', 'ym');
+
+        ym(106801697, 'init', {
+            ssr:true,
+            webvisor:true,
+            clickmap:true,
+            ecommerce:"dataLayer",
+            referrer: document.referrer,
+            url: location.href,
+            accurateTrackBounce:true,
+            trackLinks:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/106801697" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    
+    <!-- Schema.org Microdata (с вашей почтой и новым названием) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "КранАренда116",
+      "description": "Аренда автокранов 25 тонн в Казани и Республике Татарстан. Круглосуточно, с оператором.",
+      "url": "https://ваш-домен.ru",
+      "telephone": "+79655911115",
+      "email": "ehmil-shpalitov@yandex.ru",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Казань",
+        "addressRegion": "Татарстан",
+        "addressCountry": "RU"
+      },
+      "areaServed": [
+        {"@type": "City","name": "Казань"},
+        {"@type": "City","name": "Зеленодольск"},
+        {"@type": "City","name": "Арск"},
+        {"@type": "City","name": "Лаишево"},
+        {"@type": "City","name": "Верхний Услон"}
+      ],
+      "openingHours": "Mo-Su 00:00-23:59",
+      "priceRange": "₽₽",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Аренда автокранов",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Автокран Галичанин 25т",
+              "description": "Длина стрелы 21.7 м, вылет до 20 м, высота подъема 24 м, шасси КАМАЗ, 2019 г."
+            },
+            "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+            "price": "2500",
+            "priceCurrency": "RUB",
+            "availability": "http://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Автокран Галичанин 25т с удлинённой стрелой",
+              "description": "Длина стрелы 28 м, вылет до 26 м, высота подъема 31 м, шасси КАМАЗ, 2020 г."
+            },
+            "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+            "price": "3000",
+            "priceCurrency": "RUB",
+            "availability": "http://schema.org/InStock"
+          }
+        ]
+      }
+    }
+    </script>
+    
     <style>
+        /* СТИЛИ (полностью сохранены из предыдущей версии) */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
         :root {
             --primary: #ff6600;
@@ -17,6 +104,7 @@
             --light: #f9f9f9;
             --whatsapp: #25D366;
             --telegram: #0088cc;
+            --gray: #6c757d;
         }
         body { color: #444; line-height: 1.6; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
@@ -45,26 +133,33 @@
             color: var(--dark);
         }
         .logo i { color: var(--primary); }
-        .logo span { color: var(--primary); }
-        .city { color: var(--primary); font-size: 1rem; }
+        .logo span { color: var(--primary); }  /* Выделение слова Аренда */
+        .header-phone {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        .header-phone i { color: var(--primary); margin-right: 5px; }
         
         /* Hero */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
                         url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
             background-size: cover;
+            background-position: center;
             color: white;
             text-align: center;
             padding: 150px 0 80px;
             margin-top: 70px;
         }
         .hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto; }
         
         /* Кнопки */
         .buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin: 30px 0; }
         .btn {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 10px;
             padding: 15px 25px;
             font-weight: 600;
@@ -72,6 +167,8 @@
             text-decoration: none;
             transition: all 0.3s;
             border: 2px solid;
+            cursor: pointer;
+            font-size: 1rem;
         }
         .btn-primary {
             background: var(--primary);
@@ -109,8 +206,17 @@
             background: transparent;
             color: white;
         }
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
         
-        /* Секция кранов */
+        /* Секции */
         .section { padding: 60px 0; }
         .section-title {
             text-align: center;
@@ -118,6 +224,8 @@
             margin-bottom: 40px;
             color: var(--dark);
         }
+        
+        /* Карточки кранов */
         .cranes-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -129,22 +237,41 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .crane-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
         .crane-img {
-            height: 200px;
-            background: #ddd;
+            height: 220px;
             overflow: hidden;
         }
         .crane-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .crane-card:hover .crane-img img {
+            transform: scale(1.05);
         }
         .crane-info { padding: 25px; }
         .crane-title {
             font-size: 1.5rem;
             color: var(--dark);
             margin-bottom: 15px;
+        }
+        .crane-price {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 15px 0 5px;
+        }
+        .crane-price small {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--gray);
         }
         .crane-features {
             list-style: none;
@@ -162,19 +289,125 @@
             color: var(--dark);
         }
         
+        /* Таблица цен */
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .price-table th {
+            background: var(--primary);
+            color: white;
+            padding: 15px;
+            font-weight: 600;
+        }
+        .price-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .price-table tr:last-child td {
+            border-bottom: none;
+        }
+        .price-table tr:hover td {
+            background: #fef5ed;
+        }
+        
         /* Контакты */
         .contacts {
             background: var(--dark);
             color: white;
             padding: 60px 0;
-            text-align: center;
         }
         .contacts h2 { color: white; margin-bottom: 30px; }
         .phone-large {
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: 700;
             margin: 20px 0;
             color: var(--primary);
+        }
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            margin: 30px 0;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+        .contact-item i {
+            color: var(--primary);
+            width: 25px;
+            text-align: center;
+        }
+        .map-container {
+            margin-top: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        
+        /* FAQ */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        .faq-item {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--primary);
+        }
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+        .faq-answer {
+            color: #666;
+        }
+        
+        /* Кейсы */
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .case-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .case-img {
+            height: 200px;
+        }
+        .case-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .case-content {
+            padding: 20px;
+        }
+        .case-title {
+            font-size: 1.3rem;
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+        .case-desc {
+            color: #666;
+            margin-bottom: 15px;
         }
         
         /* Footer */
@@ -185,184 +418,356 @@
             padding: 30px 0;
             font-size: 0.9rem;
         }
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: var(--primary);
+        }
         
         /* Адаптивность */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
             .buttons { flex-direction: column; align-items: center; }
             .btn { width: 100%; max-width: 300px; justify-content: center; }
             .phone-large { font-size: 1.5rem; }
+            .header-container { flex-direction: column; gap: 10px; }
+            .header-phone { font-size: 1rem; }
+            .section-title { font-size: 1.8rem; }
+            .price-table { font-size: 0.9rem; }
+        }
+        @media (max-width: 480px) {
+            .hero { padding: 120px 0 60px; }
+            .crane-price { font-size: 1.3rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <div class="logo">
-                <i class="fas fa-crane"></i>
-                <div>Кран<span>Аренда</span> <span class="city">Казань</span></div>
-            </div>
-            <div class="phone">
-                <i class="fas fa-phone"></i>
-                <span>+7 (965) 591-11-15</span>
-            </div>
-        </div>
-    </header>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container">
-            <h1>Аренда автокрана 25 тонн в Казани</h1>
-            <p>Профессиональные услуги автокрана с опытными операторами. Работаем круглосуточно по Казани и области.</p>
+<!-- Header с обновлённым логотипом: Кран<span>Аренда</span>116 -->
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <i class="fas fa-crane"></i>
+            <div>Кран<span>Аренда</span>116</div>
+        </div>
+        <div class="header-phone">
+            <i class="fas fa-phone-alt"></i>
+            <span>+7 (965) 591-11-15</span>
+        </div>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <h1>Аренда автокрана 25 тонн в Казани</h1>
+        <p>Профессиональные услуги автокрана с опытными операторами. Работаем круглосуточно по Казани и всей Республике Татарстан: Зеленодольск, Арск, Лаишево, Верхний Услон и другие районы.</p>
+        
+        <div class="buttons">
+            <!-- Цель: Звонок по телефону -->
+            <a href="tel:+79655911115" class="btn btn-light" onclick="ym(106801697, 'reachGoal', 'phone_call'); return true;">
+                <i class="fas fa-phone"></i> Позвонить
+            </a>
+            <!-- Цель: WhatsApp -->
+            <a href="https://wa.me/79655911115?text=Здравствуйте!%20Интересует%20аренда%20автокрана%2025%20тонн%20в%20Казани" 
+               target="_blank" class="btn btn-whatsapp" onclick="ym(106801697, 'reachGoal', 'whatsapp_click'); return true;">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <!-- Цель: Telegram -->
+            <a href="https://t.me/kranarenda" target="_blank" class="btn btn-telegram" onclick="ym(106801697, 'reachGoal', 'telegram_click'); return true;">
+                <i class="fab fa-telegram"></i> Telegram
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Наши краны -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Автокраны 25 тонн в наличии</h2>
+        
+        <div class="cranes-grid">
+            <!-- Кран 1: Галичанин 25т (21.7м) -->
+            <div class="crane-card">
+                <div class="crane-img">
+                    <img src="galich-25.jpg" alt="Автокран Галичанин 25 тонн, стрела 21.7м, Казань" loading="lazy">
+                </div>
+                <div class="crane-info">
+                    <h3 class="crane-title">Галичанин 25т</h3>
+                    <div class="crane-price">2 500 ₽ <small>/ час</small></div>
+                    <ul class="crane-features">
+                        <li><span class="feature-label">Грузоподъемность:</span> 25 тонн</li>
+                        <li><span class="feature-label">Длина стрелы:</span> 21.7 метра</li>
+                        <li><span class="feature-label">Вылет стрелы:</span> до 20 метров</li>
+                        <li><span class="feature-label">Высота подъема:</span> до 24 метров</li>
+                        <li><span class="feature-label">Шасси:</span> КАМАЗ</li>
+                        <li><span class="feature-label">Год выпуска:</span> 2019</li>
+                    </ul>
+                    <div class="buttons" style="margin-top: 20px;">
+                        <a href="tel:+79655911115" class="btn btn-primary" style="width: 100%;" onclick="ym(106801697, 'reachGoal', 'phone_call'); return true;">
+                            <i class="fas fa-phone"></i> Заказать
+                        </a>
+                    </div>
+                </div>
+            </div>
             
-            <div class="buttons">
-                <a href="tel:+79655911115" class="btn btn-light">
-                    <i class="fas fa-phone"></i> Позвонить
-                </a>
-                <a href="https://wa.me/79655911115?text=Здравствуйте!%20Интересует%20аренда%20автокрана%2025%20тонн" 
-                   target="_blank" class="btn btn-whatsapp">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
-                <a href="https://t.me/kranarenda" target="_blank" class="btn btn-telegram">
-                    <i class="fab fa-telegram"></i> Telegram
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Краны -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Наши автокраны 25 тонн</h2>
-            
-            <div class="cranes-grid">
-                <!-- Кран 1 -->
-                <div class="crane-card">
-                    <div class="crane-img">
-                        <img src="галич 2.jpg" alt="Галичанин 25т">
-                    </div>
-                    <div class="crane-info">
-                        <h3 class="crane-title">Галичанин 25т</h3>
-                        <ul class="crane-features">
-                            <li><span class="feature-label">Грузоподъемность:</span> 25 тонн</li>
-                            <li><span class="feature-label">Длина стрелы:</span> 21.7 метра</li>
-                            <li><span class="feature-label">Вылет стрелы:</span> до 20 метров</li>
-                            <li><span class="feature-label">Высота подъема:</span> до 24 метров</li>
-                            <li><span class="feature-label">Шасси:</span> КАМАЗ</li>
-                            <li><span class="feature-label">Год выпуска:</span> 2019</li>
-                        </ul>
-                        <div class="buttons">
-                            <a href="tel:+79655911115" class="btn btn-primary" style="width: 100%;">
-                                <i class="fas fa-phone"></i> Заказать этот кран
-                            </a>
-                        </div>
-                    </div>
+            <!-- Кран 2: Галичанин 25т с удлинённой стрелой (28м) -->
+            <div class="crane-card">
+                <div class="crane-img">
+                    <img src="galich-28m.jpg" alt="Автокран Галичанин 25 тонн с удлинённой стрелой 28м, Казань" loading="lazy">
                 </div>
-                
-                <!-- Кран 2 -->
-                <div class="crane-card">
-                    <div class="crane-img">
-                        <img src="галичанин 28.jpg" alt="Галичанин 25т с удлиненной стрелой">
-                    </div>
-                    <div class="crane-info">
-                        <h3 class="crane-title">Галичанин 25т с удлиненной стрелой</h3>
-                        <ul class="crane-features">
-                            <li><span class="feature-label">Грузоподъемность:</span> 25 тонн</li>
-                            <li><span class="feature-label">Длина стрелы:</span> 28 метров</li>
-                            <li><span class="feature-label">Вылет стрелы:</span> до 26 метров</li>
-                            <li><span class="feature-label">Высота подъема:</span> до 31 метра</li>
-                            <li><span class="feature-label">Шасси:</span> КАМАЗ</li>
-                            <li><span class="feature-label">Год выпуска:</span> 2020</li>
-                        </ul>
-                        <div class="buttons">
-                            <a href="tel:+79655911115" class="btn btn-primary" style="width: 100%;">
-                                <i class="fas fa-phone"></i> Заказать этот кран
-                            </a>
-                        </div>
+                <div class="crane-info">
+                    <h3 class="crane-title">Галичанин 25т с удлинённой стрелой</h3>
+                    <div class="crane-price">3 000 ₽ <small>/ час</small></div>
+                    <ul class="crane-features">
+                        <li><span class="feature-label">Грузоподъемность:</span> 25 тонн</li>
+                        <li><span class="feature-label">Длина стрелы:</span> 28 метров</li>
+                        <li><span class="feature-label">Вылет стрелы:</span> до 26 метров</li>
+                        <li><span class="feature-label">Высота подъема:</span> до 31 метра</li>
+                        <li><span class="feature-label">Шасси:</span> КАМАЗ</li>
+                        <li><span class="feature-label">Год выпуска:</span> 2020</li>
+                    </ul>
+                    <div class="buttons" style="margin-top: 20px;">
+                        <a href="tel:+79655911115" class="btn btn-primary" style="width: 100%;" onclick="ym(106801697, 'reachGoal', 'phone_call'); return true;">
+                            <i class="fas fa-phone"></i> Заказать
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Преимущества -->
-    <section class="section" style="background: var(--light);">
-        <div class="container">
-            <h2 class="section-title">Наши преимущества</h2>
-            <div class="cranes-grid">
-                <div class="crane-card" style="text-align: center;">
-                    <div class="crane-info">
-                        <div style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h3 style="color: var(--dark);">Круглосуточно</h3>
-                        <p>Работаем 24/7, включая выходные и праздники</p>
+<!-- Таблица цен -->
+<section class="section" style="background: var(--light);">
+    <div class="container">
+        <h2 class="section-title">Цены на аренду автокрана в Казани</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Модель</th>
+                    <th>Грузоподъёмность</th>
+                    <th>Длина стрелы</th>
+                    <th>Цена (руб/час)</th>
+                    <th>Мин. заказ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Галичанин 25т</strong></td>
+                    <td>25 т</td>
+                    <td>21.7 м</td>
+                    <td><strong style="color: var(--primary);">2 500 ₽</strong></td>
+                    <td>4 часа</td>
+                </tr>
+                <tr>
+                    <td><strong>Галичанин 25т (удл. стрела)</strong></td>
+                    <td>25 т</td>
+                    <td>28 м</td>
+                    <td><strong style="color: var(--primary);">3 000 ₽</strong></td>
+                    <td>4 часа</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="text-align: center; margin-top: 20px;">* Выезд за пределы Казани — обсуждается индивидуально. Работаем с НДС и без.</p>
+    </div>
+</section>
+
+<!-- Преимущества -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <div class="cranes-grid">
+            <div class="crane-card" style="text-align: center;">
+                <div class="crane-info">
+                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;">
+                        <i class="fas fa-clock"></i>
                     </div>
+                    <h3 style="color: var(--dark);">Круглосуточно</h3>
+                    <p>Работаем 24/7 без выходных и праздников. Приедем в любое время.</p>
                 </div>
-                <div class="crane-card" style="text-align: center;">
-                    <div class="crane-info">
-                        <div style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;">
-                            <i class="fas fa-user-hard-hat"></i>
-                        </div>
-                        <h3 style="color: var(--dark);">Опытные операторы</h3>
-                        <p>Все операторы с допусками и стажем от 5 лет</p>
+            </div>
+            <div class="crane-card" style="text-align: center;">
+                <div class="crane-info">
+                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;">
+                        <i class="fas fa-user-hard-hat"></i>
                     </div>
+                    <h3 style="color: var(--dark);">Опытные операторы</h3>
+                    <p>Все операторы с допусками, стаж от 5 лет. Аккуратная работа.</p>
                 </div>
-                <div class="crane-card" style="text-align: center;">
-                    <div class="crane-info">
-                        <div style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;">
-                            <i class="fas fa-ruble-sign"></i>
-                        </div>
-                        <h3 style="color: var(--dark);">Прозрачные цены</h3>
-                        <p>Почасовая оплата, без скрытых платежей</p>
+            </div>
+            <div class="crane-card" style="text-align: center;">
+                <div class="crane-info">
+                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;">
+                        <i class="fas fa-ruble-sign"></i>
                     </div>
+                    <h3 style="color: var(--dark);">Прозрачные цены</h3>
+                    <p>Почасовая оплата, фиксированная ставка, никаких скрытых платежей.</p>
+                </div>
+            </div>
+            <div class="crane-card" style="text-align: center;">
+                <div class="crane-info">
+                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 style="color: var(--dark);">Своя техника</h3>
+                    <p>Краны в собственности, не привлекаем посредников. Гарантия исправности.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Контакты -->
-    <section class="contacts">
-        <div class="container">
-            <h2>Свяжитесь с нами</h2>
-            <p>Уточните детали и закажите кран прямо сейчас</p>
-            <div class="phone-large">+7 (965) 591-11-15</div>
-            <div class="buttons">
-                <a href="tel:+79655911115" class="btn btn-light">
-                    <i class="fas fa-phone"></i> Позвонить
-                </a>
-                <a href="https://wa.me/79655911115?text=Здравствуйте!%20Интересует%20аренда%20автокрана%2025%20тонн%20в%20Казани" 
-                   target="_blank" class="btn btn-whatsapp">
-                    <i class="fab fa-whatsapp"></i> Написать в WhatsApp
-                </a>
+<!-- Примеры работ (Кейсы) -->
+<section class="section" style="background: var(--light);">
+    <div class="container">
+        <h2 class="section-title">Примеры выполненных работ</h2>
+        <div class="cases-grid">
+            <div class="case-card">
+                <div class="case-img">
+                    <img src="podemkrihsa.jpg" alt="Подъем оборудования на крышу ТЦ, Казань" loading="lazy">
+                </div>
+                <div class="case-content">
+                    <h3 class="case-title">Монтаж оборудования на ТЦ</h3>
+                    <p class="case-desc">Подъём и установка вентиляционного оборудования на крышу торгового центра. Высота 18 м, вес груза 2.5 т.</p>
+                    <span style="color: var(--primary); font-weight: 600;">Галичанин 25т (21.7м)</span>
+                </div>
+            </div>
+            <div class="case-card">
+                <div class="case-img">
+                    <img src="kranvrabote.jpg" alt="Работа крана на стройке , Казань" loading="lazy">
+                </div>
+                <div class="case-content">
+                    <h3 class="case-title">Работа на стройке
+                         </h3>
+                    <p class="case-desc">Монтаж плит перекрытия и разгрузка кирпича . Вылет стрелы 18 м.</p>
+                    <span style="color: var(--primary); font-weight: 600;">Галичанин 25т</span>
+                </div>
+            </div>
+            <div class="case-card">
+                <div class="case-img">
+                    <img src="montajemkosti.jpg" alt="Mонтаж емкости, промзона Казань" loading="lazy">
+                </div>
+                <div class="case-content">
+                    <h3 class="case-title">Монтаж ёмкости</h3>
+                    <p class="case-desc">Монтаж емкости в промзоне. Работа на высоте до 15 м, вес ёмкости 5 т.</p>
+                    <span style="color: var(--primary); font-weight: 600;">Галичанин 25т</span>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© 2026 КранАренда Казань. Аренда автокранов 25 тонн.</p>
-            <p>Казань | Работаем 24/7</p>
+<!-- Часто задаваемые вопросы (FAQ) -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Часто задаваемые вопросы</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question">🚛 Какая минимальная аренда?</div>
+                <div class="faq-answer">Минимальный заказ — 4 часа. Дальше оплата почасовая, с округлением до часа.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">💰 Входит ли доставка крана в стоимость?</div>
+                <div class="faq-answer">В пределах Казани доставка бесплатная. Выезд в районы РТ — по тарифу 50 ₽/км от трассы.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">📄 Нужен ли пропуск в центр Казани?</div>
+                <div class="faq-answer">При необходимости оформим пропуск для въезда на грузовом транспорте в зону с ограничениями. Сообщите заранее.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">🧑‍🔧 Предоставляете ли стропальщика?</div>
+                <div class="faq-answer">Да, в комплексе с краном можем предоставить опытного стропальщика. Уточните при заказе.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">📅 Работаете ли с НДС?</div>
+                <div class="faq-answer">Работаем как с НДС, так и без НДС. Предоставляем закрывающие документы.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">🕒 Можно ли заказать на ночь?</div>
+                <div class="faq-answer">Да, мы работаем круглосуточно. Ночные заказы — без наценки.</div>
+            </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script>
-        // Простой скрипт для плавной прокрутки
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if(target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
+<!-- Контакты (подробно) -->
+<section class="contacts">
+    <div class="container">
+        <h2>Контакты</h2>
+        <p>Свяжитесь с нами удобным способом — ответим быстро, подберём технику под вашу задачу.</p>
+        <div class="phone-large">+7 (965) 591-11-15</div>
+        
+        <div class="contact-details">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>ehmil-shpalitov@yandex.ru</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Казань, работаем по всей Республике Татарстан</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <span>Круглосуточно, без выходных</span>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <a href="tel:+79655911115" class="btn btn-light" onclick="ym(106801697, 'reachGoal', 'phone_call'); return true;">
+                <i class="fas fa-phone"></i> Позвонить
+            </a>
+            <a href="https://wa.me/79655911115?text=Здравствуйте!%20Интересует%20аренда%20автокрана%2025%20тонн%20в%20Казани" 
+               target="_blank" class="btn btn-whatsapp" onclick="ym(106801697, 'reachGoal', 'whatsapp_click'); return true;">
+                <i class="fab fa-whatsapp"></i> Написать в WhatsApp
+            </a>
+            <a href="https://t.me/kranarenda" target="_blank" class="btn btn-telegram" onclick="ym(106801697, 'reachGoal', 'telegram_click'); return true;">
+                <i class="fab fa-telegram"></i> Telegram
+            </a>
+        </div>
+        
+        <!-- Карта (iframe Яндекс Карты) -->
+        <div class="map-container">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af5d51ea506d7d700192aecb9c44900aa4a37eb3a8112d7b3cfff3953d92a1956&amp;source=constructor" 
+                    width="100%" 
+                    height="400" 
+                    frameborder="0"
+                    style="border:0; display: block;"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Footer (обновлённое название) -->
+<footer>
+    <div class="container">
+        <p>© 2025–2026 КранАренда116. Аренда автокранов 25 тонн.</p>
+        <p>Казань | Зеленодольск | Арск | Лаишево | Верхний Услон | <a href="#" style="color: var(--primary);">Политика конфиденциальности</a></p>
+        <p style="margin-top: 10px; font-size: 0.8rem;">Все цены указаны как справочная информация. Для точного расчёта свяжитесь с нами.</p>
+    </div>
+</footer>
+
+<!-- Скрипты -->
+<script>
+    // Плавная прокрутка для якорей (если добавите меню)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if(target) {
+                window.scrollTo({
+                    top: target.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
         });
-    </script>
+    });
+</script>
+
 </body>
 </html>
 
